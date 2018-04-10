@@ -1,0 +1,39 @@
+<view class="container" bindtap="bindViewTap">
+  <view class="back">
+    <view class="userinfo">
+      <image class="userinfo-avatar" src="{{res.owner.avatar_url}}" background-size="cover"></image>
+      <text class="userinfo-nickname">{{res.name}}</text>
+    </view>
+    <view class="usermotto">
+      <text class="user-motto">{{res.full_name}}</text>
+    </view>
+  </view>
+  <view class="brief">{{res.description}}</view>
+
+  <view class="settings">
+  <view class="wraper">
+  <image src="/pages/assets/imgs/tools/stars.png"></image>
+    <view class="color"> Stars</view>
+    </view>
+    <view class="setColor">
+      <view class="body-view">
+        {{res.stargazers_count}}
+      </view>
+    </view>
+  </view>
+  <view class="version">
+  <view class="wraper">
+  <image src="/pages/assets/imgs/tools/fork.png"></image>
+    <view class="zhVersion">
+     Forks</view>
+</view>
+    <view class="setVersion">{{res.forks_count}}</view>
+  </view>
+  <view class="about">
+  <view class="wraper">
+  <image src="/pages/assets/imgs/tools/watch.png"></image>
+    <view class="zhAuthor"> Watchers</view>
+    </view>
+    <view class="reAuthor">{{res.watchers_count}}</view>
+  </view>
+</view>

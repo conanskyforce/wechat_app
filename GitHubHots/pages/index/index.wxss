@@ -1,0 +1,127 @@
+/**index.wxss**/
+.container {
+  height: auto;
+  display: flex;
+  flex-direction: column; 
+  /* padding: 200rpx 0; */
+  box-sizing: border-box;
+  /* border:solid 1px red; */
+} 
+.searchBar{
+  box-sizing: border-box;
+
+  background-color: whitesmoke;
+  width: 100%;
+  height: 90rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.inputClass{
+  width: 90%; 
+  background-color: white;
+  height: 1.4rem;
+  box-sizing: border-box;
+  padding-left: 50rpx;
+  background-origin: border-box;
+
+  /* background-image: url('/pages/assets/imgs/tools/search.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: left center;   */
+
+  border:solid 1px lightgray;
+  border-radius: 5px;
+ 
+}
+.placeholderClass{
+  line-height: 100%;
+  font-size: 0.90em;
+  width: 95%;
+}
+.totolResults{
+  text-align: center;
+  font-size: 0.95em;
+  font-family: "arial";
+  position: relative;
+  width:100%;
+  background-color: white;
+  color: grey;
+  margin:0 auto;
+  height: 60rpx;
+  line-height: 60rpx;
+  /* border-bottom: solid 1px lightgrey; */
+}
+.back{
+  position: absolute;
+  top:50%;
+  left:5rpx;
+  height: 40rpx;
+  width:40rpx;
+  /* background-color: grey; */
+  transform:translateY(-50%);
+  background-image: url('http://conans.top/static_pics/back.png');
+  background-position: center;
+  background-size: contain;
+}
+.result{
+  display: flex;
+  margin:2px auto;
+  box-sizing: border-box;
+  margin-bottom:20rpx;
+  /* border-top:solid 1px lightgrey;  */
+  justify-content: space-between;
+  flex-direction: row;
+  width:100%;
+  padding: 12rpx;
+  background-color: white;
+}
+page{
+  background-color: whitesmoke;
+}
+.logo{
+  width:26%;
+  height: 160rpx;
+  /* border:solid 1px red; */
+}
+.logo image{
+  width: 100%;
+  height: 160rpx;
+  border-radius: 3px;
+}
+.detail{
+  width:70%;
+  box-sizing: border-box;
+  /* border: solid 1px steelblue; */
+  height: 160rpx;
+  display: flex;
+  color: grey;
+  flex-direction: column;
+  font-size: 0.7em;
+  padding:12rpx;
+}
+.name,.datas{
+  height: 20%;
+}
+.name{
+  font-weight: bold;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  overflow-wrap: no-wrap;
+}
+.brief{
+  height: 60%;
+  line-height: 0.70rem;
+  text-indent: 24rpx;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  overflow-wrap: no-wrap;
+}
+.datas{
+  flex: row;
+  font-size: 0.9em;
+  font-weight: bold;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between
+}

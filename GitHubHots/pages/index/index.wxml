@@ -1,0 +1,28 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="searchBar">
+    <input value="{{searchValue}}" style="{{searchBarAlert?'border-color:red':'border-color:lightgray'}}" class="inputClass" bindconfirm="confirmHandler" bindblur="blurHandler" bindfocus="focusHandler" bindinput="inputHandler" placeholder="{{searchBarAlert?'请输入正确内容':(defaultLang?('搜索(默认'+defaultLang+')'):'搜索(默认JavaScript)')}}" placeholder-class="placeholderClass" confirm-type="search" />
+  </view>
+  <view  class="ct">
+  <view wx:if="{{!res.errors}}" class="totolResults">共有结果{{searchFlag?resFlag.length:res.total_count}}项</view>
+  <view wx:else class="totolResults"><view class="back" bindtap="backToMain"></view>
+  没有结果,请重新搜索</view>
+  </view>
+  <block wx:key="{{index}}" wx:for="{{searchFlag?(resFlag):(res.items)}}">
+    <view class="result" bindtap="navToDetail" data-detail="{{item}}">
+      <view class="logo">
+        <image src="{{item.owner.avatar_url}}"></image>
+      </view>
+
+      <view class="detail">
+        <view class="name">{{item.name}}</view>
+        <view class="brief">{{item.description}}</view>
+        <view class="datas">
+          <view class="watches">Wathcers:{{item.watchers_count}}</view>
+          <view class="stars">Stars:{{item.stargazers_count}}</view>
+          <view class="forks">Forks:{{item.forks}}</view>
+        </view>
+      </view>
+    </view>
+  </block>
+</view>

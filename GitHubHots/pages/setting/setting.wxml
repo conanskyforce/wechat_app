@@ -1,0 +1,31 @@
+<view class="container" bindtap="bindViewTap">
+  <view class="back">
+    <view class="userinfo">
+      <image class="userinfo-avatar" src="../assets/imgs/tools/logo_.jpg" background-size="cover"></image>
+      <text class="userinfo-nickname">GitHub Hots</text>
+    </view>
+    <view class="usermotto">
+      <text class="user-motto">{{motto}}Github 热门</text>
+    </view>
+  </view>
+  <view class="settings">
+    <view class="color">设置默认语言</view>
+    <view class="setColor">
+      <view class="body-view">
+        <picker bindchange="bindPickerChange" value="{{index}}" range="{{array}}">
+          <view class="picker">
+            {{array[index]}}
+          </view>
+        </picker>
+      </view>
+    </view>
+  </view>
+  <view class="version">
+    <view class="zhVersion">版本</view>
+    <view class="setVersion">{{version}}</view>
+  </view>
+  <view class="about">
+    <view class="zhAuthor">作者</view>
+    <view class="reAuthor">{{author}}</view>
+  </view>
+</view>
