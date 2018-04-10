@@ -1,0 +1,36 @@
+<view class="container" bindtap="bindViewTap">
+  <view class="back">
+    <view class="userinfo">
+      <image class="userinfo-avatar" src="../assets/imgs/logo.jpg" background-size="cover"></image>
+      <text class="userinfo-nickname">TokenIn</text>
+    </view>
+    <view class="usermotto">
+      <text class="user-motto">{{motto}}TokenIn</text>
+    </view>
+  </view>
+  <view class="settings">
+    <view class="color">红涨绿跌</view>
+    <view class="setColor">
+      <view class="body-view">
+        <view wx:if="{{colorSet}}">
+        <switch checked bindchange="switch1Change" />
+        </view>
+        <view wx:else>
+        <switch bindchange="switch1Change" />
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class="version">
+    <view class="zhVersion">默认显示</view>
+    <view class="setVersion">200</view>
+  </view>
+  <view class="version">
+    <view class="zhVersion">版本</view>
+    <view class="setVersion">v1.1.0</view>
+  </view>
+  <view class="about">
+    <view class="zhAuthor">关于</view>
+    <view class="reAuthor">conanskyforce</view>
+  </view>
+</view>

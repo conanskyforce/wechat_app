@@ -1,0 +1,33 @@
+<view class="container">
+  <view class="brief">
+    <view class="name">{{res.name}}({{res.symbol}})</view>
+    <view class="price">${{res.price_usd}}
+      <view class="rate" style="color:{{res.percent_change_24h>0?'#009900':'#CC3300'}}">{{res.percent_change_24h>0?"+"+res.percent_change_24h:res.percent_change_24h}}%(24h)</view>
+    </view>
+  </view>
+  <view class="intro">简介</view>
+  <view class="rank">
+    <view class="chRank">排名</view>
+    <view class="numRank">{{res.rank}}</view>
+  </view>
+  <view class="market">
+    <view class="chMarket">市值</view>
+    <view class="numMarket">${{res.market_cap_usd}}</view>
+  </view>
+  <view class="change">
+    <view class="chChange">成交量</view>
+    <view class="numChange">${{res['24h_volume_usd']}}</view>
+  </view>
+  <view class="supply">
+    <view class="chSupply">流通量</view>
+    <view class="numSupply">${{res['available_supply']}} {{res.symbol}}</view>
+  </view>
+  <view class="website">网站</view>
+  <block wx:for="{{webs}}">
+    <view class="webs">
+      <view class="name">{{item.name}}</view>
+      <view class="site">{{item.site}}</view>
+      <!-- <a href="{item.site}">{{item.site}}</a> -->
+    </view>
+  </block>
+</view>

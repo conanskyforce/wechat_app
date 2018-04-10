@@ -1,0 +1,29 @@
+{
+  "pages":[
+    "pages/search/search",
+    "pages/center/center",
+    
+    
+    "pages/details/details"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "TokenInfo",
+    "navigationBarTextStyle":"black"
+  },
+  "tabBar": {
+    "list": [{
+      "pagePath": "pages/search/search",
+      "text": "Token 行情",
+      "iconPath": "pages/assets/imgs/toolbar/home.png",
+      "selectedIconPath":"pages/assets/imgs/toolbar/home-s.png"
+    },{
+      "pagePath": "pages/center/center",
+      "text": "我的",
+      "iconPath": "pages/assets/imgs/toolbar/center.png",
+      "selectedIconPath": "pages/assets/imgs/toolbar/center-s.png"
+    }
+    ]
+  }
+}

@@ -1,0 +1,58 @@
+/**index.wxss**/
+.userinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.userinfo-avatar {
+  width: 168rpx;
+  height: 168rpx;
+  margin-top: 60rpx;
+  border-radius: 50%;
+}
+.userinfo-nickname {
+  color: whitesmoke;
+}
+.usermotto {
+  margin-top: 20rpx;
+}
+page{
+  height: 100%;
+}
+.back{
+  display: flex;
+  background-image: url('http://conans.top/static_pics/backGround.jpg');
+  background-size: cover;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+  height: 450rpx;
+  width: 100%;
+  margin-bottom: 20px;
+  /* background-color: steelblue; */
+}
+.container {
+  height: 100%; 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* justify-content: space-between; */
+  box-sizing: border-box;
+  font-family: "Microsoft YaHei";
+  font-size: 1.3em;
+  background-color: whitesmoke;
+}  
+.settings,.version,.about{
+  display: flex;
+  box-sizing: border-box;
+  padding-left: 20px;
+  padding-right: 20px;
+  height: 45px;
+  width:100%;
+  line-height: 45px;
+  margin-bottom:20px;
+  font-size: 0.8em;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: white;
+}

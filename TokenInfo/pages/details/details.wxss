@@ -1,0 +1,59 @@
+/* pages/details/details.wxss */
+.container{
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  /* border:solid 1px red; */
+  margin:0 auto;
+  font-family: "Microsoft YaHei";
+}
+.intro,.website{
+  background-color: lightgrey;
+  color: grey;
+  font-weight: bold;
+  margin:0 -20px;
+  text-indent: 20px;
+  height: 42px;
+  margin-bottom: -2px;
+  line-height: 42px;
+}
+.brief{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  font-size: 1.2em;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  align-items: flex-start;
+  border-bottom:solid lightgrey 1px;
+}
+.price{
+  font-size:1.55em;
+  font-weight: bold;
+}
+.rate{
+  display: inline-block;
+  font-size: 0.5em;
+}
+.rank,.market,.change,.supply,.webs{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border-top:solid lightgrey 1px;
+  height: 42px;
+  line-height: 42px;
+
+
+  /* align-items: space-between; */
+}
+/* .chRank,.chMarket,.chChange,.chSupply{
+  align-self: flex-start;
+}
+.numRank,.numMarket,.numCHange,.numSupply{
+  align-self: flex-end;
+} */
+.site{
+  font-size: 0.85em;
+  color: steelblue;
+}

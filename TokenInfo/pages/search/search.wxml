@@ -1,0 +1,40 @@
+<!-- <view class="loading" wx:if="{{seen}}">loading...</view> -->
+<view class="container" >
+  <view class="content">
+    <view class="toolbar">
+      <!-- <view class="index">序号</view> -->
+      <view class="cname" bindtap="sortByName">名称
+      <view class="up" style="border-top-color:{{nameSort?'whitesmoke':'lightgrey'}}"></view>
+      <view class="down" style="border-bottom-color:{{nameSort?'lightgrey':'whitesmoke'}}"></view>
+      </view>
+      <view class="price" bindtap="sortByPrice">行情
+      <view class="up" style="border-top-color:{{priceSort?'whitesmoke':'lightgrey'}}"></view>
+      <view class="down" style="border-bottom-color:{{priceSort?'lightgrey':'whitesmoke'}}"></view></view>
+      <view class="crate" bindtap="sortByRate">涨幅
+      <view class="up" style="border-top-color:{{rateSort?'whitesmoke':'lightgrey'}}"></view>
+      <view class="down" style="border-bottom-color:{{rateSort?'lightgrey':'whitesmoke'}}"></view></view>
+
+    </view>
+    <input bindblur="blurHandle" bindinput="inputHandle" bindtap="searchCoin" class="search" placeholder="输入要搜索的内容" />
+    <view class="search"><view class="icon"></view></view>
+    <block  wx:for="{{searchFlag?resSearch:res}}" wx:key="{{index}}">
+    <view catchtap="navToDetail" data-itemId="{{item.id}}" class="items">
+      <!-- <view class="index">#{{item.rank+1}}</view> -->
+      <view class="name">
+        <view class="idxsname">
+          <!-- <view class="index"> </view> -->
+          <view class="sname">#{{item.rank}},{{item.id}}</view>
+        </view>
+
+        <view class="sym">{{item.symbol}}</view>
+        <view class="market">${{item.market_cap_usd}}</view>
+      </view>
+      <view class="price">${{item.price_usd}}</view>
+      <view class="rate" style="background-color:{{!colorSet?(item.percent_change_24h>0?'#009900':'#CC3300'):(item.percent_change_24h<0?'#009900':'#CC3300')}}">{{item.percent_change_24h>0?"+":""}}{{item.percent_change_24h}}%</view>
+    </view>
+    </block> 
+  </view>
+  <view>
+    <button  bindtap="bindSearchTap">{{searchEnd?'没有了':'更多'}}</button>
+  </view>
+</view>
