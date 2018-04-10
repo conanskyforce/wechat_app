@@ -5,9 +5,9 @@
 查看数字货币市值的小程序
 
 ### 截图:
-![shot1](https://raw.githubusercontent.com/conanskyforce/wechat_app/master/TokenInfo/shots/shot1.png)
-![shot2](https://raw.githubusercontent.com/conanskyforce/wechat_app/master/TokenInfo/shots/shot2.png)
-![shot3](https://raw.githubusercontent.com/conanskyforce/wechat_app/master/TokenInfo/shots/shot3.png)
+![shot1](https://raw.githubusercontent.com/conanskyforce/wechat_app/master/TokenInfo/shots/shot1.jpg)
+![shot2](https://raw.githubusercontent.com/conanskyforce/wechat_app/master/TokenInfo/shots/shot2.jpg)
+![shot3](https://raw.githubusercontent.com/conanskyforce/wechat_app/master/TokenInfo/shots/shot3.jpeg)
 
 ### 使用
 1 微信小程序搜索 ```TokenInfo```
@@ -18,9 +18,9 @@
 GitHub 项目排行榜小程序
 
 ### 截图
-![shot1](https://raw.githubusercontent.com/conanskyforce/wechat_app/master/GitHubHots/shots/shot1.png)
-![shot2](https://raw.githubusercontent.com/conanskyforce/wechat_app/master/GitHubHots/shots/shot2.png)
-![shot3](https://raw.githubusercontent.com/conanskyforce/wechat_app/master/GitHubHots/shots/shot3.png)
+![shot1](https://raw.githubusercontent.com/conanskyforce/wechat_app/master/GitHubHots/shots/shot1.jpg)
+![shot2](https://raw.githubusercontent.com/conanskyforce/wechat_app/master/GitHubHots/shots/shot2.jpg)
+![shot3](https://raw.githubusercontent.com/conanskyforce/wechat_app/master/GitHubHots/shots/shot3.jpg)
 
 ### 使用：
 1 微信小程序搜索 ```GitHubHots```
